@@ -1,0 +1,190 @@
+/* PHONE CHECKER */
+
+.phone_block {
+    background: black;
+    padding: 100px 0;
+}
+
+.inner_phone_block {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid var(--orange);
+    height: 300px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.form_phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_phone button {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* TAB SLIDER */
+
+.tab_slider {
+    background: black;
+    padding: 100px 0;
+}
+
+.tab_content_block {
+    width: 700px;
+    border: 1px solid var(--orange);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: none; /* 👈 было flex, но теперь скрываем неактивные */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    animation: fadeIn 0.5s ease; /* 👈 плавное появление */
+}
+
+.tab_content_block.active {
+    display: flex; /* 👈 показываем только активный */
+}
+
+.tab_content_block img {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* 👈 тень под фото */
+}
+
+.tab_content_block p {
+    color: white;
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.tab_content_items {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.tab_item {
+    padding: 10px;
+    height: 30px;
+    color: white;
+    border: 1px solid var(--orange);
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    transition: 0.3s;
+}
+
+.tab_item.active {
+    background: var(--orange);
+    color: black;
+    font-weight: 600;
+    border: 1px solid white;
+}
+
+.tab_contents_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* 👇 Анимация плавного появления */
+@keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.95);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+/*------CARD SWITCHER------*/
+
+.card_switcher {
+    background-color: black;
+    padding: 100px 0;
+}
+
+.card {
+    width: 500px;
+    height: 150px;
+    border: 1px solid var(--orange);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.card p {
+    color: var(--orange);
+    font-size: 20px;
+}
+
+.card span {
+    color: white;
+    font-size: 30px;
+}
+
+.inner_card_switcher {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*-------CONVERTER--------*/
+
+.converter {
+    padding: 100px 0;
+    background-color: black;
+}
+
+.inner_converter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.inner_converter > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------WEATHER------*/
+
+.weather {
+    padding: 100px 0;
+    background-color: black;
+}
+
+.inner_weather > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+.inner_weather {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+hr {
+    width: 100%;
+}
